@@ -53,9 +53,13 @@ void PrintShortestPath(int Start, int Dest)
 	for (int i = 0; i < Path.size(); i++)
 	{
 		int Vertex = Path[i];
-		cout << "开 规巩: " << Path[i] << '\n';
-		cout << "开 何葛: " << Parent[Vertex] << '\n';
-		cout << "开 芭府: " << Distance[Vertex] << '\n' << endl;
+		//cout << "开 规巩: " << Path[i] << '\n';
+		//cout << "开 何葛: " << Parent[Vertex] << '\n';
+		//cout << "开 芭府: " << Distance[Vertex] << '\n' << endl;
+
+		cout << Vertex;
+		if (i + 1 < Path.size())
+			cout << " ℃ ";
 	}
 
 }
